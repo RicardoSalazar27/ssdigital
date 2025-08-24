@@ -1,90 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SASE Digital - Inicio</title>
-  <link rel="icon" href="logo.png" type="image/png">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    body {
-      background-color: #1b1f2b;
-      background-image: radial-gradient(circle at top left, #03ddb2, #2584f8);
-    }
-
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes pulseButton {
-      0%, 100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-    }
-
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink {
-      50% { border-color: transparent }
-    }
-
-    .fade-in-up {
-      animation: fadeInUp 1s ease-out;
-    }
-
-    .pulse-hover:hover {
-      animation: pulseButton 0.6s ease-in-out;
-    }
-
-    .typewriter {
-      overflow: hidden;
-      white-space: nowrap;
-      border-right: 3px solid #a8f5e1;
-      width: 0;
-      animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASE Digital – Innovación sin límites</title>
+    <link rel="icon" type="image/png" href="/resources/Monograma.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="text-white flex items-center justify-center min-h-screen px-6 relative">
-  <div class="text-center fade-in-up">
-    <!-- Logotipo -->
-    <img src="logo.png" alt="Logo SASEDigital" class="mx-auto w-80 mb-6 transform transition duration-1000 hover:scale-105" />
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="resources/logo.png" alt="SASE Digital">
+            </div>
+            <ul class="nav-links">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+    <li><a href="#servicios">Servicios</a></li>
 
-    <h1 class="text-4xl md:text-6xl font-extrabold mb-2 text-[#03ddb2] tracking-wide">SASE Digital</h1>
-    <p class="text-xl md:text-2xl font-medium mb-6 text-[#a8f5e1] italic">
-      Innovación Sin Límites.
-    </p>
+    <!-- Dropdown -->
+    <li class="dropdown">
+        <a href="#">Productos ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="#sg-hotelero">Sistema Gestor Hotelero</a></li>
+            <!-- <li><a href="#sg-empresarial">Sistema Empresarial</a></li>
+            <li><a href="#sg-escolar">Sistema Escolar</a></li> -->
+        </ul>
+    </li>
 
-    <p class="text-lg md:text-2xl mb-8 text-[#e3ecf7] typewriter">
-      Estamos trabajando en algo increíble...
-    </p>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+</ul>
 
-    <div class="flex justify-center space-x-4">
-      <a href="mailto:contacto@sasedigital.com" class="bg-[#03ddb2] text-[#1b1f2b] px-6 py-2 rounded-full font-semibold hover:bg-[#029e88] transition pulse-hover">
-        Contáctanos
-      </a>
-      <a class="border-2 border-white text-white px-6 py-2 rounded-full font-semibold transition 
-           hover:bg-white hover:text-[#1b1f2b] hover:font-bold shadow hover:shadow-lg">
-        Síguenos
-      </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+    <img src="resources/Monograma.png" alt="SASE Digital" class="hero-logo">
+    <h1>SASE Digital</h1>
+    <p>Innovación sin límites</p>
+    <p>Soluciones tecnológicas y desarrollo de software a medida para optimizar y proteger tu negocio.</p>
+    <a href="#contacto" class="btn-primary">Contáctanos</a>
+</div>
+
+    </section>
+ 
+    <!-- Quiénes Somos -->
+<section id="quienes-somos" class="section section-alt-bg">
+    <h2>¿Quiénes Somos?</h2>
+    <div class="quienes-somos-container">
+        <div class="imagen-about">
+            <img src="resources/about-us.png" alt="Sobre nosotros">
+        </div>
+        <div class="texto-about">
+            <p><strong>SASE Digital</strong> es una empresa dedicada a ofrecer soluciones tecnológicas y desarrollo de software a medida. Ayudamos a organizaciones a optimizar sus procesos mediante herramientas digitales innovadoras, seguras y escalables.</p>
+        </div>
     </div>
-  </div>
 
-  <footer class="absolute bottom-4 text-sm text-[#9ca3af]">
-    © 2025 SASE Digital - Innovación Sin Límites. Todos los derechos reservados.
-  </footer>
+    <div class="bloques-sobre-nosotros">
+    <div class="bloque">
+        <i class="fa-solid fa-bullseye icono-bloque"></i>
+        <h3>Misión</h3>
+        <p>Brindar soluciones tecnológicas confiables e innovadoras que impulsen la eficiencia, seguridad y competitividad de nuestros clientes.</p>
+    </div>
+    <div class="bloque">
+        <i class="fa-solid fa-eye icono-bloque"></i>
+        <h3>Visión</h3>
+        <p>Ser una empresa líder en tecnología y desarrollo de software, reconocida por la calidad, la innovación y el compromiso con cada proyecto.</p>
+    </div>
+    <div class="bloque">
+        <i class="fa-solid fa-star icono-bloque"></i>
+        <h3>Valores</h3>
+        <ul>
+            <li>Innovación constante</li>
+            <li>Ética profesional</li>
+            <li>Calidad en cada entrega</li>
+            <li>Orientación al cliente</li>
+            <li>Pasión por la tecnología</li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+
+
+    <!-- Servicios -->
+    <section id="servicios" class="section section-alt">
+        <h2>Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <i class="fa-solid fa-code fa-3x icono-servicio"></i>
+                <h3>Desarrollo de software a medida</h3>
+                <p>Sistemas de gestión empresarial y hotelera. Aplicaciones personalizadas según las necesidades del cliente.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fa-solid fa-server fa-3x icono-servicio"></i>
+                <h3>Instalación y mantenimiento de servidores</h3>
+                <p>Configuración y optimización de servidores locales y redes, garantizando estabilidad y seguridad.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fa-solid fa-camera fa-3x icono-servicio"></i>
+                <h3>Sistemas de videovigilancia y alarmas</h3>
+                <p>Instalación de cámaras de seguridad, grabación y monitoreo profesional.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fa-solid fa-computer fa-3x icono-servicio"></i>
+                <h3>Mantenimiento de equipos de cómputo</h3>
+                <p>Limpieza, optimización y prevención de fallas de hardware y software.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <!-- <section id="experiencia" class="section">
+        <h2>Experiencia y logros</h2>
+        <p>Hemos implementado nuestro <strong>sistema gestor hotelero</strong> con éxito en 3 clientes, además de brindar servicios de instalación de servidores y sistemas de seguridad a 5 clientes.</p>
+        <p>Cada proyecto refleja nuestro compromiso con la calidad, innovación y satisfacción del cliente, demostrando nuestra capacidad para entregar soluciones confiables y eficientes.</p>
+    </section> -->
+
+    <!-- Clientes -->
+    <section id="clientes" class="section section-alt">
+        <h2>Clientes</h2>
+        <div class="clientes-grid">
+            <div class="cliente-card">
+                <img src="resources/persona1.jpg" alt="Cliente 1">
+            </div>
+            <div class="cliente-card">
+                <img src="resources/persona3.jpg" alt="Cliente 2">
+            </div>
+            <div class="cliente-card">
+                <img src="resources/persona2.jpg" alt="Cliente 3">
+            </div>
+            <div class="cliente-card">
+                <img src="resources/persona4.jpg" alt="Cliente 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+<section id="contacto" class="section contacto">
+  <h2>Contacto</h2>
+  <p>Basados en Coatzintla, Veracruz, México, ofrecemos soluciones tecnológicas integrales para empresas y particulares.</p>
+  <ul class="contact-list">
+    <li><i class="fa-solid fa-envelope"></i> <a href="mailto:contacto@sasedigital.com">contacto@sasedigital.com</a></li>
+    <li><i class="fa-solid fa-phone"></i> <a href="tel:+[Agregar número]">[Agregar número]</a></li>
+    <li><i class="fa-solid fa-globe"></i> <a href="https://www.sasedigital.com" target="_blank" rel="noopener noreferrer">www.sasedigital.com</a></li>
+  </ul>
+  <a href="mailto:contacto@sasedigital.com" class="btn-primary">Enviar correo</a>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 SASE Digital. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
